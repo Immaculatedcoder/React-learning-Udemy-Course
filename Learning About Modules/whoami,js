@@ -1,0 +1,16 @@
+
+
+const sayMyName = () => {
+    return 'Immaculatedcoder'
+}
+
+export default sayMyName
+
+// or
+
+```
+export default const sayMyName = () => {
+    return 'Immaculatedcoder'
+}
+
+```

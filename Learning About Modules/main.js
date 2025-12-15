@@ -22,27 +22,27 @@ console.log('learning modules...')
 
 // Lesson 5(Dynamic import): 
 
-if (true) {
-    const {sayHi, sayHola} = await import('./greetings.js') 
+// if (true) {
+//     const {sayHi, sayHola} = await import('./greetings.js') 
 
-    sayHi();
-    sayHola();
-}
+//     sayHi();
+//     sayHola();
+// }
 
-const promises = Promise.all(
-    [
-        await import('./greetings.js'), 
-        await import('./calc.js')
-    ]
-)
+// const promises = Promise.all(
+//     [
+//         await import('./greetings.js'), 
+//         await import('./calc.js')
+//     ]
+// )
 
-console.log(promises)
+// console.log(promises)
 
-promises.then(result => {
-    console.log(result); 
-    console.log(result[0].sayHi());
-    console.log(result[1].sum(2,3));
-})
+// promises.then(result => {
+//     console.log(result); 
+//     console.log(result[0].sayHi());
+//     console.log(result[1].sum(2,3));
+// })
 
 
 
@@ -56,4 +56,10 @@ promises.then(result => {
 // import anyname from './whoami.js'
 // console.log(anyname())
 
+
+// ------------------------Practice------
+import { customStyle, greeting } from "./cal.js"
+
+console.log(customStyle)
+console.log(greeting)
 
